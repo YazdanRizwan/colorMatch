@@ -24,8 +24,6 @@ window.onload = function () {
     startGame();
 }
 
-let time = prompt("Please enter the amount of time for which you want to show color in the starting in seconds!");
-
 function shuffleCards() {
     cardSet = cardList.concat(cardList); //two of each card
     console.log(cardSet);
@@ -58,7 +56,7 @@ function startGame() {
     }
 
     console.log(board);
-    setTimeout(hideCards, time*1000);
+    setTimeout(hideCards, 1500);
 }
 
 function hideCards() {
